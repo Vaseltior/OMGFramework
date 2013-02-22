@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'OMGFramework' target in the 'OMGFramework' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "OMGFramework.h"
+#endif

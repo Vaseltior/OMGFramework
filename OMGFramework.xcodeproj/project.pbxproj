@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5439C41163BE82C00ADB70F /* OMLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C40163BE82C00ADB70F /* OMLogManager.m */; };
+		F5439C42163BE82C00ADB70F /* OMLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C40163BE82C00ADB70F /* OMLogManager.m */; };
+		F5439C44163BE96700ADB70F /* OMLogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C3F163BE82C00ADB70F /* OMLogManager.h */; };
+		F5439C55163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */; };
+		F5439C56163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */; };
+		F5439C59163C1F9800ADB70F /* OMVendorHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C58163C1EE500ADB70F /* OMVendorHeader.h */; };
+		F5439C5A163C1F9800ADB70F /* FDStatusBarNotifierView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */; };
+		F5439C5B163C1F9800ADB70F /* OMFDStatusBarNotifierView+Namespace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */; };
+		F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; };
+		F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; };
+		F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */; };
+		F583EDEB1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */; };
+		F583EDF01632EF26007C2D87 /* OMCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDEF1632EEB4007C2D87 /* OMCore.h */; };
+		F583EDF11632EF26007C2D87 /* OMObjectSingleton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDEE1632EE9F007C2D87 /* OMObjectSingleton.h */; };
+		F583EDF21632EF26007C2D87 /* OMCoreDataController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDE31632ED6D007C2D87 /* OMCoreDataController.h */; };
+		F583EDF31632EF26007C2D87 /* OMCoreDataGrandCentralController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDE51632ED6D007C2D87 /* OMCoreDataGrandCentralController.h */; };
+		F583EDF41632EF26007C2D87 /* OMCoreDataHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDE71632ED6D007C2D87 /* OMCoreDataHeader.h */; };
+		F583EDF81632F08F007C2D87 /* NSDictionary+OMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDF71632F08F007C2D87 /* NSDictionary+OMG.m */; };
+		F583EDF91632F08F007C2D87 /* NSDictionary+OMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDF71632F08F007C2D87 /* NSDictionary+OMG.m */; };
+		F583EDFA1632F10A007C2D87 /* NSDictionary+OMG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDF61632F08F007C2D87 /* NSDictionary+OMG.h */; };
+		F5ABD3D6162AF792003E576F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD3D5162AF792003E576F /* Foundation.framework */; };
+		F5ABD3DB162AF792003E576F /* OMGFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD3DA162AF792003E576F /* OMGFramework.h */; };
+		F5ABD3E5162AF793003E576F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD3E4162AF793003E576F /* SenTestingKit.framework */; };
+		F5ABD3E7162AF793003E576F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD3E6162AF793003E576F /* UIKit.framework */; };
+		F5ABD3E8162AF793003E576F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD3D5162AF792003E576F /* Foundation.framework */; };
+		F5ABD3EB162AF793003E576F /* libOMGFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD3D2162AF792003E576F /* libOMGFramework.a */; };
+		F5ABD3F1162AF793003E576F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5ABD3EF162AF793003E576F /* InfoPlist.strings */; };
+		F5ABD3F4162AF793003E576F /* OMGFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD3F3162AF793003E576F /* OMGFrameworkTests.m */; };
+		F5ABD41E162AF806003E576F /* NSArray+OMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD408162AF806003E576F /* NSArray+OMG.m */; };
+		F5ABD41F162AF806003E576F /* NSArray+OMG.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD408162AF806003E576F /* NSArray+OMG.m */; };
+		F5ABD420162AF806003E576F /* OMVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD40D162AF806003E576F /* OMVersionNumber.m */; };
+		F5ABD421162AF806003E576F /* OMVersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD40D162AF806003E576F /* OMVersionNumber.m */; };
+		F5ABD422162AF806003E576F /* OMControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD415162AF806003E576F /* OMControl.m */; };
+		F5ABD423162AF806003E576F /* OMControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD415162AF806003E576F /* OMControl.m */; };
+		F5ABD424162AF806003E576F /* OMControlContent.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD417162AF806003E576F /* OMControlContent.m */; };
+		F5ABD425162AF806003E576F /* OMControlContent.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD417162AF806003E576F /* OMControlContent.m */; };
+		F5ABD426162AF806003E576F /* OMTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD41B162AF806003E576F /* OMTagListView.m */; };
+		F5ABD427162AF806003E576F /* OMTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD41B162AF806003E576F /* OMTagListView.m */; };
+		F5ABD428162AF806003E576F /* OMTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD41D162AF806003E576F /* OMTagView.m */; };
+		F5ABD429162AF806003E576F /* OMTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD41D162AF806003E576F /* OMTagView.m */; };
+		F5ABD43D162AF813003E576F /* NSArrayOMGTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD42E162AF813003E576F /* NSArrayOMGTest.m */; };
+		F5ABD43E162AF813003E576F /* OMVersionNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD433162AF813003E576F /* OMVersionNumberTest.m */; };
+		F5ABD43F162AF813003E576F /* OMControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ABD43A162AF813003E576F /* OMControlTest.m */; };
+		F5ABD440162AF880003E576F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD3E6162AF793003E576F /* UIKit.framework */; };
+		F5ABD442162AF893003E576F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD441162AF893003E576F /* CoreGraphics.framework */; };
+		F5ABD443162AF897003E576F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ABD441162AF893003E576F /* CoreGraphics.framework */; };
+		F5ABD960162E0743003E576F /* OMAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD3FE162AF806003E576F /* OMAdditions.h */; };
+		F5ABD961162E0743003E576F /* OMApplication.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD3FF162AF806003E576F /* OMApplication.h */; };
+		F5ABD962162E0743003E576F /* OMCoreHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD400162AF806003E576F /* OMCoreHeader.h */; };
+		F5ABD963162E0743003E576F /* OMFixCategoryBugHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD401162AF806003E576F /* OMFixCategoryBugHeader.h */; };
+		F5ABD965162E0743003E576F /* OMUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD403162AF806003E576F /* OMUI.h */; };
+		F5ABD968162E0D9E003E576F /* NSArray+OMG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD407162AF806003E576F /* NSArray+OMG.h */; };
+		F5ABD969162E0D9E003E576F /* OMVersionNumber.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD40C162AF806003E576F /* OMVersionNumber.h */; };
+		F5ABD96A162E0D9E003E576F /* OMControl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD414162AF806003E576F /* OMControl.h */; };
+		F5ABD96B162E0D9E003E576F /* OMControlContent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD416162AF806003E576F /* OMControlContent.h */; };
+		F5ABD96C162E0D9E003E576F /* OMTagListView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD41A162AF806003E576F /* OMTagListView.h */; };
+		F5ABD96D162E0D9E003E576F /* OMTagView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5ABD41C162AF806003E576F /* OMTagView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5ABD3E9162AF793003E576F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5ABD3C9162AF792003E576F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5ABD3D1162AF792003E576F;
+			remoteInfo = OMGFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5ABD3D0162AF792003E576F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F5439C59163C1F9800ADB70F /* OMVendorHeader.h in CopyFiles */,
+				F5439C5A163C1F9800ADB70F /* FDStatusBarNotifierView.h in CopyFiles */,
+				F5439C5B163C1F9800ADB70F /* OMFDStatusBarNotifierView+Namespace.h in CopyFiles */,
+				F5439C44163BE96700ADB70F /* OMLogManager.h in CopyFiles */,
+				F583EDFA1632F10A007C2D87 /* NSDictionary+OMG.h in CopyFiles */,
+				F583EDF01632EF26007C2D87 /* OMCore.h in CopyFiles */,
+				F583EDF11632EF26007C2D87 /* OMObjectSingleton.h in CopyFiles */,
+				F583EDF21632EF26007C2D87 /* OMCoreDataController.h in CopyFiles */,
+				F583EDF31632EF26007C2D87 /* OMCoreDataGrandCentralController.h in CopyFiles */,
+				F583EDF41632EF26007C2D87 /* OMCoreDataHeader.h in CopyFiles */,
+				F5ABD968162E0D9E003E576F /* NSArray+OMG.h in CopyFiles */,
+				F5ABD969162E0D9E003E576F /* OMVersionNumber.h in CopyFiles */,
+				F5ABD96A162E0D9E003E576F /* OMControl.h in CopyFiles */,
+				F5ABD96B162E0D9E003E576F /* OMControlContent.h in CopyFiles */,
+				F5ABD96C162E0D9E003E576F /* OMTagListView.h in CopyFiles */,
+				F5ABD96D162E0D9E003E576F /* OMTagView.h in CopyFiles */,
+				F5ABD960162E0743003E576F /* OMAdditions.h in CopyFiles */,
+				F5ABD961162E0743003E576F /* OMApplication.h in CopyFiles */,
+				F5ABD962162E0743003E576F /* OMCoreHeader.h in CopyFiles */,
+				F5ABD963162E0743003E576F /* OMFixCategoryBugHeader.h in CopyFiles */,
+				F5ABD965162E0743003E576F /* OMUI.h in CopyFiles */,
+				F5ABD3DB162AF792003E576F /* OMGFramework.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F5439C3F163BE82C00ADB70F /* OMLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMLogManager.h; sourceTree = "<group>"; };
+		F5439C40163BE82C00ADB70F /* OMLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMLogManager.m; sourceTree = "<group>"; };
+		F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStatusBarNotifierView.h; sourceTree = "<group>"; };
+		F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStatusBarNotifierView.m; sourceTree = "<group>"; };
+		F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMFDStatusBarNotifierView+Namespace.h"; sourceTree = "<group>"; };
+		F5439C58163C1EE500ADB70F /* OMVendorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMVendorHeader.h; sourceTree = "<group>"; };
+		F583EDE31632ED6D007C2D87 /* OMCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataController.h; sourceTree = "<group>"; };
+		F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCoreDataController.m; sourceTree = "<group>"; };
+		F583EDE51632ED6D007C2D87 /* OMCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataGrandCentralController.h; sourceTree = "<group>"; };
+		F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCoreDataGrandCentralController.m; sourceTree = "<group>"; };
+		F583EDE71632ED6D007C2D87 /* OMCoreDataHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataHeader.h; sourceTree = "<group>"; };
+		F583EDEE1632EE9F007C2D87 /* OMObjectSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMObjectSingleton.h; sourceTree = "<group>"; };
+		F583EDEF1632EEB4007C2D87 /* OMCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMCore.h; sourceTree = "<group>"; };
+		F583EDF61632F08F007C2D87 /* NSDictionary+OMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OMG.h"; sourceTree = "<group>"; };
+		F583EDF71632F08F007C2D87 /* NSDictionary+OMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OMG.m"; sourceTree = "<group>"; };
+		F5ABD3D2162AF792003E576F /* libOMGFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOMGFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ABD3D5162AF792003E576F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5ABD3D9162AF792003E576F /* OMGFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMGFramework-Prefix.pch"; sourceTree = "<group>"; };
+		F5ABD3DA162AF792003E576F /* OMGFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMGFramework.h; sourceTree = "<group>"; };
+		F5ABD3E3162AF793003E576F /* OMGFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMGFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ABD3E4162AF793003E576F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5ABD3E6162AF793003E576F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5ABD3EE162AF793003E576F /* OMGFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OMGFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		F5ABD3F0162AF793003E576F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5ABD3F2162AF793003E576F /* OMGFrameworkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMGFrameworkTests.h; sourceTree = "<group>"; };
+		F5ABD3F3162AF793003E576F /* OMGFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMGFrameworkTests.m; sourceTree = "<group>"; };
+		F5ABD3FE162AF806003E576F /* OMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = OMAdditions.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F5ABD3FF162AF806003E576F /* OMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = OMApplication.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F5ABD400162AF806003E576F /* OMCoreHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreHeader.h; sourceTree = "<group>"; };
+		F5ABD401162AF806003E576F /* OMFixCategoryBugHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMFixCategoryBugHeader.h; sourceTree = "<group>"; };
+		F5ABD403162AF806003E576F /* OMUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMUI.h; sourceTree = "<group>"; };
+		F5ABD407162AF806003E576F /* NSArray+OMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSArray+OMG.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F5ABD408162AF806003E576F /* NSArray+OMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSArray+OMG.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F5ABD40C162AF806003E576F /* OMVersionNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMVersionNumber.h; sourceTree = "<group>"; };
+		F5ABD40D162AF806003E576F /* OMVersionNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMVersionNumber.m; sourceTree = "<group>"; };
+		F5ABD414162AF806003E576F /* OMControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMControl.h; sourceTree = "<group>"; };
+		F5ABD415162AF806003E576F /* OMControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMControl.m; sourceTree = "<group>"; };
+		F5ABD416162AF806003E576F /* OMControlContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMControlContent.h; sourceTree = "<group>"; };
+		F5ABD417162AF806003E576F /* OMControlContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMControlContent.m; sourceTree = "<group>"; };
+		F5ABD41A162AF806003E576F /* OMTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTagListView.h; sourceTree = "<group>"; };
+		F5ABD41B162AF806003E576F /* OMTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTagListView.m; sourceTree = "<group>"; };
+		F5ABD41C162AF806003E576F /* OMTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTagView.h; sourceTree = "<group>"; };
+		F5ABD41D162AF806003E576F /* OMTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTagView.m; sourceTree = "<group>"; };
+		F5ABD42D162AF813003E576F /* NSArrayOMGTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NSArrayOMGTest.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F5ABD42E162AF813003E576F /* NSArrayOMGTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NSArrayOMGTest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F5ABD432162AF813003E576F /* OMVersionNumberTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMVersionNumberTest.h; sourceTree = "<group>"; };
+		F5ABD433162AF813003E576F /* OMVersionNumberTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMVersionNumberTest.m; sourceTree = "<group>"; };
+		F5ABD439162AF813003E576F /* OMControlTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMControlTest.h; sourceTree = "<group>"; };
+		F5ABD43A162AF813003E576F /* OMControlTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMControlTest.m; sourceTree = "<group>"; };
+		F5ABD441162AF893003E576F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5ABD3CF162AF792003E576F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ABD442162AF893003E576F /* CoreGraphics.framework in Frameworks */,
+				F5ABD3D6162AF792003E576F /* Foundation.framework in Frameworks */,
+				F5ABD440162AF880003E576F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ABD3DF162AF793003E576F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ABD3E5162AF793003E576F /* SenTestingKit.framework in Frameworks */,
+				F5ABD3E7162AF793003E576F /* UIKit.framework in Frameworks */,
+				F5ABD3E8162AF793003E576F /* Foundation.framework in Frameworks */,
+				F5ABD3EB162AF793003E576F /* libOMGFramework.a in Frameworks */,
+				F5ABD443162AF897003E576F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5439C51163C1D9300ADB70F /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F5439C58163C1EE500ADB70F /* OMVendorHeader.h */,
+				F5439C52163C1D9300ADB70F /* FDStatusBarNotifierView */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		F5439C52163C1D9300ADB70F /* FDStatusBarNotifierView */ = {
+			isa = PBXGroup;
+			children = (
+				F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */,
+				F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */,
+				F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */,
+			);
+			path = FDStatusBarNotifierView;
+			sourceTree = "<group>";
+		};
+		F583EDE11632ED6D007C2D87 /* core-data */ = {
+			isa = PBXGroup;
+			children = (
+				F583EDE21632ED6D007C2D87 /* controller */,
+				F583EDE71632ED6D007C2D87 /* OMCoreDataHeader.h */,
+			);
+			path = "core-data";
+			sourceTree = "<group>";
+		};
+		F583EDE21632ED6D007C2D87 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F583EDE31632ED6D007C2D87 /* OMCoreDataController.h */,
+				F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */,
+				F583EDE51632ED6D007C2D87 /* OMCoreDataGrandCentralController.h */,
+				F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F583EDED1632EE9F007C2D87 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				F5439C3F163BE82C00ADB70F /* OMLogManager.h */,
+				F5439C40163BE82C00ADB70F /* OMLogManager.m */,
+				F583EDEF1632EEB4007C2D87 /* OMCore.h */,
+				F583EDEE1632EE9F007C2D87 /* OMObjectSingleton.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		F583EDF51632F08F007C2D87 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F583EDF61632F08F007C2D87 /* NSDictionary+OMG.h */,
+				F583EDF71632F08F007C2D87 /* NSDictionary+OMG.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		F5ABD3C7162AF792003E576F = {
+			isa = PBXGroup;
+			children = (
+				F5ABD3D7162AF792003E576F /* OMGFramework */,
+				F5ABD3EC162AF793003E576F /* OMGFrameworkTests */,
+				F5ABD3D4162AF792003E576F /* Frameworks */,
+				F5ABD3D3162AF792003E576F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5ABD3D3162AF792003E576F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD3D2162AF792003E576F /* libOMGFramework.a */,
+				F5ABD3E3162AF793003E576F /* OMGFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5ABD3D4162AF792003E576F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD441162AF893003E576F /* CoreGraphics.framework */,
+				F5ABD3D5162AF792003E576F /* Foundation.framework */,
+				F5ABD3E4162AF793003E576F /* SenTestingKit.framework */,
+				F5ABD3E6162AF793003E576F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5ABD3D7162AF792003E576F /* OMGFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F5439C51163C1D9300ADB70F /* vendor */,
+				F5ABD3FD162AF806003E576F /* headers */,
+				F5ABD404162AF806003E576F /* src */,
+				F5ABD3DA162AF792003E576F /* OMGFramework.h */,
+				F5ABD3D8162AF792003E576F /* Supporting Files */,
+			);
+			path = OMGFramework;
+			sourceTree = "<group>";
+		};
+		F5ABD3D8162AF792003E576F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD3D9162AF792003E576F /* OMGFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5ABD3EC162AF793003E576F /* OMGFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD42A162AF813003E576F /* src */,
+				F5ABD3F2162AF793003E576F /* OMGFrameworkTests.h */,
+				F5ABD3F3162AF793003E576F /* OMGFrameworkTests.m */,
+				F5ABD3ED162AF793003E576F /* Supporting Files */,
+			);
+			path = OMGFrameworkTests;
+			sourceTree = "<group>";
+		};
+		F5ABD3ED162AF793003E576F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD3EE162AF793003E576F /* OMGFrameworkTests-Info.plist */,
+				F5ABD3EF162AF793003E576F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5ABD3FD162AF806003E576F /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD3FE162AF806003E576F /* OMAdditions.h */,
+				F5ABD3FF162AF806003E576F /* OMApplication.h */,
+				F5ABD400162AF806003E576F /* OMCoreHeader.h */,
+				F5ABD401162AF806003E576F /* OMFixCategoryBugHeader.h */,
+				F5ABD403162AF806003E576F /* OMUI.h */,
+			);
+			path = headers;
+			sourceTree = "<group>";
+		};
+		F5ABD404162AF806003E576F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F583EDED1632EE9F007C2D87 /* core */,
+				F583EDE11632ED6D007C2D87 /* core-data */,
+				F5ABD405162AF806003E576F /* additions */,
+				F5ABD40A162AF806003E576F /* application */,
+				F5ABD40E162AF806003E576F /* device */,
+				F5ABD40F162AF806003E576F /* exceptions */,
+				F5ABD410162AF806003E576F /* mathematics */,
+				F5ABD411162AF806003E576F /* strings */,
+				F5ABD412162AF806003E576F /* ui */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F5ABD405162AF806003E576F /* additions */ = {
+			isa = PBXGroup;
+			children = (
+				F583EDF51632F08F007C2D87 /* NSDictionary */,
+				F5ABD406162AF806003E576F /* NSArray */,
+				F5ABD409162AF806003E576F /* NSString */,
+			);
+			path = additions;
+			sourceTree = "<group>";
+		};
+		F5ABD406162AF806003E576F /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD407162AF806003E576F /* NSArray+OMG.h */,
+				F5ABD408162AF806003E576F /* NSArray+OMG.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		F5ABD409162AF806003E576F /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		F5ABD40A162AF806003E576F /* application */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD40B162AF806003E576F /* version */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		F5ABD40B162AF806003E576F /* version */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD40C162AF806003E576F /* OMVersionNumber.h */,
+				F5ABD40D162AF806003E576F /* OMVersionNumber.m */,
+			);
+			path = version;
+			sourceTree = "<group>";
+		};
+		F5ABD40E162AF806003E576F /* device */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		F5ABD40F162AF806003E576F /* exceptions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = exceptions;
+			sourceTree = "<group>";
+		};
+		F5ABD410162AF806003E576F /* mathematics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mathematics;
+			sourceTree = "<group>";
+		};
+		F5ABD411162AF806003E576F /* strings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = strings;
+			sourceTree = "<group>";
+		};
+		F5ABD412162AF806003E576F /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD413162AF806003E576F /* controls */,
+				F5ABD418162AF806003E576F /* views */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F5ABD413162AF806003E576F /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD414162AF806003E576F /* OMControl.h */,
+				F5ABD415162AF806003E576F /* OMControl.m */,
+				F5ABD416162AF806003E576F /* OMControlContent.h */,
+				F5ABD417162AF806003E576F /* OMControlContent.m */,
+			);
+			path = controls;
+			sourceTree = "<group>";
+		};
+		F5ABD418162AF806003E576F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD419162AF806003E576F /* tags */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F5ABD419162AF806003E576F /* tags */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD41A162AF806003E576F /* OMTagListView.h */,
+				F5ABD41B162AF806003E576F /* OMTagListView.m */,
+				F5ABD41C162AF806003E576F /* OMTagView.h */,
+				F5ABD41D162AF806003E576F /* OMTagView.m */,
+			);
+			path = tags;
+			sourceTree = "<group>";
+		};
+		F5ABD42A162AF813003E576F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD42B162AF813003E576F /* additions */,
+				F5ABD430162AF813003E576F /* application */,
+				F5ABD434162AF813003E576F /* device */,
+				F5ABD435162AF813003E576F /* exceptions */,
+				F5ABD436162AF813003E576F /* mathematics */,
+				F5ABD437162AF813003E576F /* ui */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F5ABD42B162AF813003E576F /* additions */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD42C162AF813003E576F /* NSArray */,
+				F5ABD42F162AF813003E576F /* NSString */,
+			);
+			path = additions;
+			sourceTree = "<group>";
+		};
+		F5ABD42C162AF813003E576F /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD42D162AF813003E576F /* NSArrayOMGTest.h */,
+				F5ABD42E162AF813003E576F /* NSArrayOMGTest.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		F5ABD42F162AF813003E576F /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		F5ABD430162AF813003E576F /* application */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD431162AF813003E576F /* version */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		F5ABD431162AF813003E576F /* version */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD432162AF813003E576F /* OMVersionNumberTest.h */,
+				F5ABD433162AF813003E576F /* OMVersionNumberTest.m */,
+			);
+			path = version;
+			sourceTree = "<group>";
+		};
+		F5ABD434162AF813003E576F /* device */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		F5ABD435162AF813003E576F /* exceptions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = exceptions;
+			sourceTree = "<group>";
+		};
+		F5ABD436162AF813003E576F /* mathematics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mathematics;
+			sourceTree = "<group>";
+		};
+		F5ABD437162AF813003E576F /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD438162AF813003E576F /* controls */,
+				F5ABD43B162AF813003E576F /* views */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F5ABD438162AF813003E576F /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD439162AF813003E576F /* OMControlTest.h */,
+				F5ABD43A162AF813003E576F /* OMControlTest.m */,
+			);
+			path = controls;
+			sourceTree = "<group>";
+		};
+		F5ABD43B162AF813003E576F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F5ABD43C162AF813003E576F /* tags */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F5ABD43C162AF813003E576F /* tags */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tags;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5ABD3D1162AF792003E576F /* OMGFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5ABD3F7162AF793003E576F /* Build configuration list for PBXNativeTarget "OMGFramework" */;
+			buildPhases = (
+				F5ABD3CE162AF792003E576F /* Sources */,
+				F5ABD3CF162AF792003E576F /* Frameworks */,
+				F5ABD3D0162AF792003E576F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMGFramework;
+			productName = OMGFramework;
+			productReference = F5ABD3D2162AF792003E576F /* libOMGFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5ABD3E2162AF793003E576F /* OMGFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5ABD3FA162AF793003E576F /* Build configuration list for PBXNativeTarget "OMGFrameworkTests" */;
+			buildPhases = (
+				F5ABD3DE162AF793003E576F /* Sources */,
+				F5ABD3DF162AF793003E576F /* Frameworks */,
+				F5ABD3E0162AF793003E576F /* Resources */,
+				F5ABD3E1162AF793003E576F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5ABD3EA162AF793003E576F /* PBXTargetDependency */,
+			);
+			name = OMGFrameworkTests;
+			productName = OMGFrameworkTests;
+			productReference = F5ABD3E3162AF793003E576F /* OMGFrameworkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5ABD3C9162AF792003E576F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Samuel Grau";
+			};
+			buildConfigurationList = F5ABD3CC162AF792003E576F /* Build configuration list for PBXProject "OMGFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5ABD3C7162AF792003E576F;
+			productRefGroup = F5ABD3D3162AF792003E576F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5ABD3D1162AF792003E576F /* OMGFramework */,
+				F5ABD3E2162AF793003E576F /* OMGFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5ABD3E0162AF793003E576F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ABD3F1162AF793003E576F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F5ABD3E1162AF793003E576F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5ABD3CE162AF792003E576F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ABD41E162AF806003E576F /* NSArray+OMG.m in Sources */,
+				F5ABD420162AF806003E576F /* OMVersionNumber.m in Sources */,
+				F5ABD422162AF806003E576F /* OMControl.m in Sources */,
+				F5ABD424162AF806003E576F /* OMControlContent.m in Sources */,
+				F5ABD426162AF806003E576F /* OMTagListView.m in Sources */,
+				F5ABD428162AF806003E576F /* OMTagView.m in Sources */,
+				F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
+				F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
+				F583EDF81632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
+				F5439C41163BE82C00ADB70F /* OMLogManager.m in Sources */,
+				F5439C55163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ABD3DE162AF793003E576F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ABD3F4162AF793003E576F /* OMGFrameworkTests.m in Sources */,
+				F5ABD41F162AF806003E576F /* NSArray+OMG.m in Sources */,
+				F5ABD421162AF806003E576F /* OMVersionNumber.m in Sources */,
+				F5ABD423162AF806003E576F /* OMControl.m in Sources */,
+				F5ABD425162AF806003E576F /* OMControlContent.m in Sources */,
+				F5ABD427162AF806003E576F /* OMTagListView.m in Sources */,
+				F5ABD429162AF806003E576F /* OMTagView.m in Sources */,
+				F5ABD43D162AF813003E576F /* NSArrayOMGTest.m in Sources */,
+				F5ABD43E162AF813003E576F /* OMVersionNumberTest.m in Sources */,
+				F5ABD43F162AF813003E576F /* OMControlTest.m in Sources */,
+				F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
+				F583EDEB1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
+				F583EDF91632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
+				F5439C42163BE82C00ADB70F /* OMLogManager.m in Sources */,
+				F5439C56163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5ABD3EA162AF793003E576F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5ABD3D1162AF792003E576F /* OMGFramework */;
+			targetProxy = F5ABD3E9162AF793003E576F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5ABD3EF162AF793003E576F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5ABD3F0162AF793003E576F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5ABD3F5162AF793003E576F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5ABD3F6162AF793003E576F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5ABD3F8162AF793003E576F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OMGFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMGFramework/OMGFramework-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F5ABD3F9162AF793003E576F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OMGFramework.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMGFramework/OMGFramework-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F5ABD3FB162AF793003E576F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMGFramework/OMGFramework-Prefix.pch";
+				INFOPLIST_FILE = "OMGFrameworkTests/OMGFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F5ABD3FC162AF793003E576F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OMGFramework/OMGFramework-Prefix.pch";
+				INFOPLIST_FILE = "OMGFrameworkTests/OMGFrameworkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5ABD3CC162AF792003E576F /* Build configuration list for PBXProject "OMGFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ABD3F5162AF793003E576F /* Debug */,
+				F5ABD3F6162AF793003E576F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5ABD3F7162AF793003E576F /* Build configuration list for PBXNativeTarget "OMGFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ABD3F8162AF793003E576F /* Debug */,
+				F5ABD3F9162AF793003E576F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5ABD3FA162AF793003E576F /* Build configuration list for PBXNativeTarget "OMGFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ABD3FB162AF793003E576F /* Debug */,
+				F5ABD3FC162AF793003E576F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5ABD3C9162AF792003E576F /* Project object */;
+}
