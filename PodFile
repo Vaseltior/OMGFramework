@@ -1,0 +1,8 @@
+platform :ios, '6.0'
+xcodeproj 'OMGFramework.xcodeproj'
+
+pod 'FDStatusBarNotifierView', '~> 0.1.0'
+
+target :'OMGFrameworkTests', :exclusive => true do
+    pod 'Kiwi'
+end

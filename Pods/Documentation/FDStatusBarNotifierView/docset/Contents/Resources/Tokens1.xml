@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FDStatusBarNotifierView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FDStatusBarNotifierView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/setMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/message</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FDStatusBarNotifierView/message</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/setShouldHideOnTap:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL shouldHideOnTap</Declaration>
+			
+			
+			<Anchor>//api/name/shouldHideOnTap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/shouldHideOnTap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL shouldHideOnTap</Declaration>
+			
+			
+			<Anchor>//api/name/shouldHideOnTap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FDStatusBarNotifierView/shouldHideOnTap</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL shouldHideOnTap</Declaration>
+			
+			
+			<Anchor>//api/name/shouldHideOnTap</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/setManuallyHide:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL manuallyHide</Declaration>
+			
+			
+			<Anchor>//api/name/manuallyHide</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/manuallyHide</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL manuallyHide</Declaration>
+			
+			
+			<Anchor>//api/name/manuallyHide</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FDStatusBarNotifierView/manuallyHide</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) BOOL manuallyHide</Declaration>
+			
+			
+			<Anchor>//api/name/manuallyHide</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/setTimeOnScreen:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval timeOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/timeOnScreen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/timeOnScreen</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval timeOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/timeOnScreen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FDStatusBarNotifierView/timeOnScreen</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign, nonatomic) NSTimeInterval timeOnScreen</Declaration>
+			
+			
+			<Anchor>//api/name/timeOnScreen</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/setIsHidden:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL isHidden</Declaration>
+			
+			
+			<Anchor>//api/name/isHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/isHidden</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL isHidden</Declaration>
+			
+			
+			<Anchor>//api/name/isHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FDStatusBarNotifierView/isHidden</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic) BOOL isHidden</Declaration>
+			
+			
+			<Anchor>//api/name/isHidden</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property id&lt;FDStatusBarNotifierViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property id&lt;FDStatusBarNotifierViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FDStatusBarNotifierView/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>@property id&lt;FDStatusBarNotifierViewDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/initWithMessage:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMessage:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/initWithMessage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/initWithMessage:delegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithMessage:(NSString *)message delegate:(id&lt;FDStatusBarNotifierViewDelegate&gt;)delegate</Declaration>
+			
+			
+			<Anchor>//api/name/initWithMessage:delegate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/showInWindow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)showInWindow:(UIWindow *)window</Declaration>
+			
+			
+			<Anchor>//api/name/showInWindow:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FDStatusBarNotifierView/hide</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)hide</Declaration>
+			
+			
+			<Anchor>//api/name/hide</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

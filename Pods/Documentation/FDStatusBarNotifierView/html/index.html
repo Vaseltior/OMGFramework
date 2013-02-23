@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FDStatusBarNotifierView 0.1.0 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">FDStatusBarNotifierView 0.1.0 </a></h1>
+				<a id="developerHome" href="index.html">Francesco Di Lorenzo</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">FDStatusBarNotifierView 0.1.0 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">FDStatusBarNotifierView 0.1.0 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<p><strong>FDStatusBarNotifier</strong> is a UIView subclass that lets you display notifications using the space in which the status bar resides.</p>
+
+<p><img src="[http://github.com/frankdilo/FDStatusBarNotifierView/raw/master/Screenshot.png" alt="" />](http://github.com/frankdilo/FDStatusBarNotifierView/raw/master/Screenshot.png))</p>
+
+<h1>Installation</h1>
+
+<h2>Copy File</h2>
+
+<p>To use it just drag and drop <code></code>FDStatusBarNotifierView<code>.h</code> and <code></code>FDStatusBarNotifierView<code>.m</code> in your project, import the <code>.h</code> file in your view controller implementation and use the code shown in the example above.</p>
+
+<h2>Cocoapods</h2>
+
+<p>You can use <a href="http://cocoapods.org">CocoaPods</a> to manage your dependencies and install <em><a href="Classes/FDStatusBarNotifierView.html">FDStatusBarNotifierView</a></em>.
+Follow the instructions on the CocoaPods site to <a href="https://github.com/CocoaPods/CocoaPods#installation">install the gem</a> and add <code>pod 'FDStatusBarNotifierView', :git =&gt; '</code>https://github.com/frankdilo/FDStatusBarNotifierView.git'<code></code> to your <em>Podfile</em>.</p>
+
+<h1>Use</h1>
+
+<p>It’s as easy to use as <code>UIAlertView</code>, here is an example:</p>
+
+<pre><code>// from a view controller
+FDStatusBarNotifierView *notifierView = [[FDStatusBarNotifierView alloc] initWithMessage:@"Hi"];
+notifierView.timeOnScreen = 3.0;
+[notifierView showInWindow:self.view.window];
+</code></pre>
+
+<p>When you call <code>showInWindow:</code> the status bar disappear and the notifier view takes its place with a smooth animation.</p>
+
+<h2>Manually hide</h2>
+
+<p>In some circumstances (e.g., informing the user of network activities), you may want to manually hide the component.</p>
+
+<p>To do so just set the <code>manuallyHide</code> property to <code>YES</code>. Then hide calling the <code>hide</code> method.</p>
+
+<pre><code>notifierView.manuallyHide = YES;
+
+// do some stuff
+
+[notifierView hide];
+</code></pre>
+
+<h2>More</h2>
+
+<ul>
+<li>If you set the <code>shouldHideOnTap</code> property to <code>YES</code> when the user touch the message it will be hidden.</li>
+<li>If the message you want to display doesn’t fit in the status bar it will be animated and scroll horizontally to display the full text.</li>
+</ul>
+
+
+<h2>Optional delegate methods</h2>
+
+<p>I&rsquo;ve also created some handy <em>self-explanatory</em> delegate methods, if you need them.</p>
+
+<pre><code>- (void)willPresentNotifierView:(FDStatusBarNotifierView *)notifierView;  // before animation and showing view
+- (void)didPresentNotifierView:(FDStatusBarNotifierView *)notifierView;   // after animation
+- (void)willHideNotifierView:(FDStatusBarNotifierView *)notifierView;     // before hiding animation
+- (void)didHideNotifierView:(FDStatusBarNotifierView *)notifierView;      // after animation
+- (void)notifierViewTapped:(FDStatusBarNotifierView *)notifierView;       // user tap the status bar message
+</code></pre>
+
+<h1>Contribute</h1>
+
+<p>Feel free to help out by sending pull requests or by creating new issues.</p>
+
+<h2>Contributors</h2>
+
+<ul>
+<li><a href="https://github.com/ZachOrr">ZachOrr</a>: iPad support, hide on tap, better handling of device’s screen sizes.</li>
+<li><a href="https://github.com/dbsGen">dbsGen</a>: if the message to display doesn’t fit in the status bar, it will scroll horizontally.</li>
+<li><a href="https://github.com/lukabernardi">Luca Bernardi</a>: CocoaPods support, manual hiding.</li>
+</ul>
+
+
+<h2>TO DO</h2>
+
+<ul>
+<li>Add support for multiple orientations (currently only portrait is supported).</li>
+<li>Properly manage the animation queue, to avoid unexpected behavior when <code>showInWindow:</code> is called multiple times.</li>
+</ul>
+
+
+<h1>License</h1>
+
+<h2>MIT License</h2>
+
+<p>Copyright &copy; 2012 Francesco Di Lorenzo</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &ldquo;Software&rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+						
+						
+					</div>
+					
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/FDStatusBarNotifierView.html">FDStatusBarNotifierView</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						<h2 class="index-title">Protocol References</h2>
+						<ul>
+							
+							<li><a href="Protocols/FDStatusBarNotifierViewDelegate.html">FDStatusBarNotifierViewDelegate</a></li>
+							
+						</ul>
+						
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Francesco Di Lorenzo. All rights reserved. (Last updated: 2013-02-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

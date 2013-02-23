@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/samuelgrau/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.FDStatusBarNotifierView-0.1.0.docset
+Time: 2013-02-23 00:42:29 +0000

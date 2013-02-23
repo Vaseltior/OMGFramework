@@ -1,0 +1,14 @@
+
+PODS:
+- FDStatusBarNotifierView (0.1.0)
+- Kiwi (2.0.5)
+
+DEPENDENCIES:
+- FDStatusBarNotifierView (~> 0.1.0)
+- Kiwi
+
+SPEC CHECKSUMS:
+  FDStatusBarNotifierView: 46fc1eb663cb75fc65a77f359032d0624d943f7a
+  Kiwi: 89ade77eb49c889178cb2779e02514a7b9b9449e
+
+COCOAPODS: 0.16.2

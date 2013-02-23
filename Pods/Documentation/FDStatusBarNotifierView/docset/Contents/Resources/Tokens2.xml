@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/FDStatusBarNotifierViewDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/FDStatusBarNotifierViewDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FDStatusBarNotifierViewDelegate/willPresentNotifierView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)willPresentNotifierView:(FDStatusBarNotifierView *)notifierView</Declaration>
+			
+			
+			<Anchor>//api/name/willPresentNotifierView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FDStatusBarNotifierViewDelegate/didPresentNotifierView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)didPresentNotifierView:(FDStatusBarNotifierView *)notifierView</Declaration>
+			
+			
+			<Anchor>//api/name/didPresentNotifierView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FDStatusBarNotifierViewDelegate/willHideNotifierView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)willHideNotifierView:(FDStatusBarNotifierView *)notifierView</Declaration>
+			
+			
+			<Anchor>//api/name/willHideNotifierView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FDStatusBarNotifierViewDelegate/didHideNotifierView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)didHideNotifierView:(FDStatusBarNotifierView *)notifierView</Declaration>
+			
+			
+			<Anchor>//api/name/didHideNotifierView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FDStatusBarNotifierViewDelegate/notifierViewTapped:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FDStatusBarNotifierView.h</DeclaredIn>			
+			
+			<Declaration>- (void)notifierViewTapped:(FDStatusBarNotifierView *)notifierView</Declaration>
+			
+			
+			<Anchor>//api/name/notifierViewTapped:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

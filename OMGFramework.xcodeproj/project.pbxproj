@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5439C55163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */; };
-		F5439C56163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */; };
-		F5439C59163C1F9800ADB70F /* OMVendorHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C58163C1EE500ADB70F /* OMVendorHeader.h */; };
-		F5439C5A163C1F9800ADB70F /* FDStatusBarNotifierView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */; };
-		F5439C5B163C1F9800ADB70F /* OMFDStatusBarNotifierView+Namespace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */; };
+		29BE291F3B894D459143FAB2 /* libPods-OMGFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 096E920664764EF8968BAD88 /* libPods-OMGFrameworkTests.a */; };
+		A49959A3F2424D16B562FC2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A469B489534AC69424718A /* libPods.a */; };
 		F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; };
 		F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; };
 		F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */; };
@@ -80,9 +77,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				F5439C59163C1F9800ADB70F /* OMVendorHeader.h in CopyFiles */,
-				F5439C5A163C1F9800ADB70F /* FDStatusBarNotifierView.h in CopyFiles */,
-				F5439C5B163C1F9800ADB70F /* OMFDStatusBarNotifierView+Namespace.h in CopyFiles */,
 				F583EDFA1632F10A007C2D87 /* NSDictionary+OMG.h in CopyFiles */,
 				F583EDF01632EF26007C2D87 /* OMCore.h in CopyFiles */,
 				F583EDF11632EF26007C2D87 /* OMObjectSingleton.h in CopyFiles */,
@@ -107,10 +101,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStatusBarNotifierView.h; sourceTree = "<group>"; };
-		F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStatusBarNotifierView.m; sourceTree = "<group>"; };
-		F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMFDStatusBarNotifierView+Namespace.h"; sourceTree = "<group>"; };
-		F5439C58163C1EE500ADB70F /* OMVendorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMVendorHeader.h; sourceTree = "<group>"; };
+		096E920664764EF8968BAD88 /* libPods-OMGFrameworkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMGFrameworkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0797DF09B6A465A8E877C3D /* Pods-OMGFrameworkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMGFrameworkTests.xcconfig"; path = "Pods/Pods-OMGFrameworkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		C9A469B489534AC69424718A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F583EDE31632ED6D007C2D87 /* OMCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataController.h; sourceTree = "<group>"; };
 		F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCoreDataController.m; sourceTree = "<group>"; };
 		F583EDE51632ED6D007C2D87 /* OMCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataGrandCentralController.h; sourceTree = "<group>"; };
@@ -155,6 +148,7 @@
 		F5ABD439162AF813003E576F /* OMControlTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMControlTest.h; sourceTree = "<group>"; };
 		F5ABD43A162AF813003E576F /* OMControlTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMControlTest.m; sourceTree = "<group>"; };
 		F5ABD441162AF893003E576F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8B10520B89044269F72A233 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +159,7 @@
 				F5ABD442162AF893003E576F /* CoreGraphics.framework in Frameworks */,
 				F5ABD3D6162AF792003E576F /* Foundation.framework in Frameworks */,
 				F5ABD440162AF880003E576F /* UIKit.framework in Frameworks */,
+				A49959A3F2424D16B562FC2D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,31 +172,13 @@
 				F5ABD3E8162AF793003E576F /* Foundation.framework in Frameworks */,
 				F5ABD3EB162AF793003E576F /* libOMGFramework.a in Frameworks */,
 				F5ABD443162AF897003E576F /* CoreGraphics.framework in Frameworks */,
+				29BE291F3B894D459143FAB2 /* libPods-OMGFrameworkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F5439C51163C1D9300ADB70F /* vendor */ = {
-			isa = PBXGroup;
-			children = (
-				F5439C58163C1EE500ADB70F /* OMVendorHeader.h */,
-				F5439C52163C1D9300ADB70F /* FDStatusBarNotifierView */,
-			);
-			path = vendor;
-			sourceTree = "<group>";
-		};
-		F5439C52163C1D9300ADB70F /* FDStatusBarNotifierView */ = {
-			isa = PBXGroup;
-			children = (
-				F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */,
-				F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */,
-				F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */,
-			);
-			path = FDStatusBarNotifierView;
-			sourceTree = "<group>";
-		};
 		F583EDE11632ED6D007C2D87 /* core-data */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +224,8 @@
 				F5ABD3EC162AF793003E576F /* OMGFrameworkTests */,
 				F5ABD3D4162AF792003E576F /* Frameworks */,
 				F5ABD3D3162AF792003E576F /* Products */,
+				F8B10520B89044269F72A233 /* Pods.xcconfig */,
+				B0797DF09B6A465A8E877C3D /* Pods-OMGFrameworkTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +245,8 @@
 				F5ABD3D5162AF792003E576F /* Foundation.framework */,
 				F5ABD3E4162AF793003E576F /* SenTestingKit.framework */,
 				F5ABD3E6162AF793003E576F /* UIKit.framework */,
+				C9A469B489534AC69424718A /* libPods.a */,
+				096E920664764EF8968BAD88 /* libPods-OMGFrameworkTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,7 +254,6 @@
 		F5ABD3D7162AF792003E576F /* OMGFramework */ = {
 			isa = PBXGroup;
 			children = (
-				F5439C51163C1D9300ADB70F /* vendor */,
 				F5ABD3FD162AF806003E576F /* headers */,
 				F5ABD404162AF806003E576F /* src */,
 				F5ABD3DA162AF792003E576F /* OMGFramework.h */,
@@ -567,6 +547,7 @@
 				F5ABD3CE162AF792003E576F /* Sources */,
 				F5ABD3CF162AF792003E576F /* Frameworks */,
 				F5ABD3D0162AF792003E576F /* CopyFiles */,
+				186732F2D6FB48D3A422D305 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -585,6 +566,7 @@
 				F5ABD3DF162AF793003E576F /* Frameworks */,
 				F5ABD3E0162AF793003E576F /* Resources */,
 				F5ABD3E1162AF793003E576F /* ShellScript */,
+				12BE72F2E8524920B214967A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -635,6 +617,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12BE72F2E8524920B214967A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-OMGFrameworkTests-resources.sh\"\n";
+		};
+		186732F2D6FB48D3A422D305 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		F5ABD3E1162AF793003E576F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,7 +674,6 @@
 				F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
 				F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
 				F583EDF81632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
-				F5439C55163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +694,6 @@
 				F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
 				F583EDEB1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
 				F583EDF91632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
-				F5439C56163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,7 +725,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -728,7 +740,11 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -742,11 +758,19 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -757,6 +781,7 @@
 		};
 		F5ABD3F8162AF793003E576F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B10520B89044269F72A233 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/OMGFramework.dst;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -773,6 +798,7 @@
 		};
 		F5ABD3F9162AF793003E576F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B10520B89044269F72A233 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/OMGFramework.dst;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -789,6 +815,7 @@
 		};
 		F5ABD3FB162AF793003E576F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0797DF09B6A465A8E877C3D /* Pods-OMGFrameworkTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -804,6 +831,7 @@
 		};
 		F5ABD3FC162AF793003E576F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0797DF09B6A465A8E877C3D /* Pods-OMGFrameworkTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
