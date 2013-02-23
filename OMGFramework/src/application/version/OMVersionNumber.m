@@ -7,6 +7,7 @@
 //
 
 #import "OMVersionNumber.h"
+#import "OMCoreHeader.h"
 
 @interface OMVersionNumber ()
 @property (nonatomic, retain) NSString * version;

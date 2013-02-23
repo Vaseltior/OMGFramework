@@ -7,6 +7,7 @@
 //
 
 #import "OMTagView.h"
+#import "OMGFramework.h"
 
 @implementation OMTagView
 

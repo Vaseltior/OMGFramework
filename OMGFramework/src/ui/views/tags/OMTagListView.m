@@ -8,6 +8,7 @@
 
 #import "OMTagListView.h"
 #import "OMTagView.h"
+#import "OMGFramework.h"
 
 @interface OMTagListView()
 
