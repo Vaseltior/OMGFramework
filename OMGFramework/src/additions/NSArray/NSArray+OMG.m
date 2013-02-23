@@ -8,8 +8,6 @@
 
 #import "NSArray+OMG.h"
 
-OM_FIX_CATEGORY_BUG(NSArray_OMG)
-
 @implementation NSArray (OMG)
 
 
