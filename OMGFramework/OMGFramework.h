@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 #import "OMCore.h"
-#import "OMVendorHeader.h"
 #import "OMCoreHeader.h"
 #import "OMAdditions.h"
 #import "OMObjectSingleton.h"
