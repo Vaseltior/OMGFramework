@@ -17,9 +17,58 @@
 #pragma mark - Singleton definition
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+static OMCoreDataGrandCentralController * instance = nil;
 
-OM_OBJECT_SINGLETON_BOILERPLATE(OMCoreDataGrandCentralController, instance)
++ (instancetype)instance {
+    @synchronized(self) {                                
+        static dispatch_once_t pred;                       
+        if (instance == nil) {                 
+            dispatch_once(&pred, ^{                          
+                instance = [[OMCoreDataGrandCentralController alloc] init];               
+            });                                          
+        }                                              
+    }                                                
+    return instance;
+}
 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++ (id)allocWithZone:(NSZone *)zone {
+    @synchronized(self) {                            
+        if (instance == nil) {
+            instance = [super allocWithZone:zone];
+            return instance;
+        }                                              
+    }                                                
+    
+    /* We can't return the shared instance, because it's been init'd */ 
+    NSAssert(NO, @"use the singleton API, not alloc+init");        
+    return nil;                                      
+}
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (id)retain {
+    return self;                                     
+}                                                  
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (NSUInteger)retainCount {
+    return NSUIntegerMax;                            
+}                                                  
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (oneway void)release {
+}                                                  
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (id)autorelease {
+    return self;                                     
+}                                                  
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- (id)copyWithZone:(NSZone *)zone {
+    return self;                                     
+}
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #pragma mark - Initialization
