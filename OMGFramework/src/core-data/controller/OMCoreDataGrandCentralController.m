@@ -8,6 +8,7 @@
 #import "OMCoreDataGrandCentralController.h"
 #import "OMCoreDataController.h"
 #import "OMCoreHeader.h"
+#import "NSDictionary+OMG.h"
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,10 +109,10 @@ static OMCoreDataGrandCentralController * instance = nil;
 - (OMCoreDataController *)controllerWithName:(NSString *)name {
     NSAssert(name, @"Missing parameter name", nil);
     OMCoreDataController * result = nil;
-    result = [NSDictionary vfk:name 
-                            wd:_coreDataControllers 
-                            et:[OMCoreDataController class] 
-                            dv:nil];
+    result = (OMCoreDataController *)[NSDictionary vfk:(id)name
+                                                    wd:_coreDataControllers
+                                                    et:[OMCoreDataController class]
+                                                    dv:nil];
     return result;
 }
 

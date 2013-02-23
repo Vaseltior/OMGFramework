@@ -8,6 +8,7 @@
 
 #import "OMControlContent.h"
 #import "OMControl.h"
+#import "OMGFramework.h"
 
 @interface OMControlContent()
 
