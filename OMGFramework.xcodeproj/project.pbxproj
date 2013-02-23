@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5439C41163BE82C00ADB70F /* OMLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C40163BE82C00ADB70F /* OMLogManager.m */; };
-		F5439C42163BE82C00ADB70F /* OMLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C40163BE82C00ADB70F /* OMLogManager.m */; };
-		F5439C44163BE96700ADB70F /* OMLogManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C3F163BE82C00ADB70F /* OMLogManager.h */; };
 		F5439C55163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */; };
 		F5439C56163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */; };
 		F5439C59163C1F9800ADB70F /* OMVendorHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5439C58163C1EE500ADB70F /* OMVendorHeader.h */; };
@@ -86,7 +83,6 @@
 				F5439C59163C1F9800ADB70F /* OMVendorHeader.h in CopyFiles */,
 				F5439C5A163C1F9800ADB70F /* FDStatusBarNotifierView.h in CopyFiles */,
 				F5439C5B163C1F9800ADB70F /* OMFDStatusBarNotifierView+Namespace.h in CopyFiles */,
-				F5439C44163BE96700ADB70F /* OMLogManager.h in CopyFiles */,
 				F583EDFA1632F10A007C2D87 /* NSDictionary+OMG.h in CopyFiles */,
 				F583EDF01632EF26007C2D87 /* OMCore.h in CopyFiles */,
 				F583EDF11632EF26007C2D87 /* OMObjectSingleton.h in CopyFiles */,
@@ -111,8 +107,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F5439C3F163BE82C00ADB70F /* OMLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMLogManager.h; sourceTree = "<group>"; };
-		F5439C40163BE82C00ADB70F /* OMLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMLogManager.m; sourceTree = "<group>"; };
 		F5439C53163C1D9300ADB70F /* FDStatusBarNotifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStatusBarNotifierView.h; sourceTree = "<group>"; };
 		F5439C54163C1D9300ADB70F /* FDStatusBarNotifierView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStatusBarNotifierView.m; sourceTree = "<group>"; };
 		F5439C57163C1DD600ADB70F /* OMFDStatusBarNotifierView+Namespace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OMFDStatusBarNotifierView+Namespace.h"; sourceTree = "<group>"; };
@@ -231,8 +225,6 @@
 		F583EDED1632EE9F007C2D87 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				F5439C3F163BE82C00ADB70F /* OMLogManager.h */,
-				F5439C40163BE82C00ADB70F /* OMLogManager.m */,
 				F583EDEF1632EEB4007C2D87 /* OMCore.h */,
 				F583EDEE1632EE9F007C2D87 /* OMObjectSingleton.h */,
 			);
@@ -672,7 +664,6 @@
 				F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
 				F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
 				F583EDF81632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
-				F5439C41163BE82C00ADB70F /* OMLogManager.m in Sources */,
 				F5439C55163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,7 +685,6 @@
 				F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
 				F583EDEB1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
 				F583EDF91632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
-				F5439C42163BE82C00ADB70F /* OMLogManager.m in Sources */,
 				F5439C56163C1D9300ADB70F /* FDStatusBarNotifierView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

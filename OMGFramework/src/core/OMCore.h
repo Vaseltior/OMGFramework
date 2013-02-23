@@ -10,6 +10,5 @@
 #define OMGFramework_OMCoreHeader_h
 
 #import "OMObjectSingleton.h"
-#import "OMLogManager.h"
 
 #endif
