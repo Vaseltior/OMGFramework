@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		29BE291F3B894D459143FAB2 /* libPods-OMGFrameworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 096E920664764EF8968BAD88 /* libPods-OMGFrameworkTests.a */; };
 		A49959A3F2424D16B562FC2D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A469B489534AC69424718A /* libPods.a */; };
+		F5434CEB16DECA3E007766CE /* OMTextHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5434CEA16DECA3E007766CE /* OMTextHyphenator.m */; };
+		F5434CEC16DECA3E007766CE /* OMTextHyphenator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5434CEA16DECA3E007766CE /* OMTextHyphenator.m */; };
 		F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; };
 		F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; };
 		F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */; };
@@ -104,6 +106,8 @@
 		096E920664764EF8968BAD88 /* libPods-OMGFrameworkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMGFrameworkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0797DF09B6A465A8E877C3D /* Pods-OMGFrameworkTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMGFrameworkTests.xcconfig"; path = "Pods/Pods-OMGFrameworkTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		C9A469B489534AC69424718A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5434CE916DECA3E007766CE /* OMTextHyphenator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMTextHyphenator.h; sourceTree = "<group>"; };
+		F5434CEA16DECA3E007766CE /* OMTextHyphenator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMTextHyphenator.m; sourceTree = "<group>"; };
 		F583EDE31632ED6D007C2D87 /* OMCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataController.h; sourceTree = "<group>"; };
 		F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCoreDataController.m; sourceTree = "<group>"; };
 		F583EDE51632ED6D007C2D87 /* OMCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataGrandCentralController.h; sourceTree = "<group>"; };
@@ -385,6 +389,8 @@
 		F5ABD411162AF806003E576F /* strings */ = {
 			isa = PBXGroup;
 			children = (
+				F5434CE916DECA3E007766CE /* OMTextHyphenator.h */,
+				F5434CEA16DECA3E007766CE /* OMTextHyphenator.m */,
 			);
 			path = strings;
 			sourceTree = "<group>";
@@ -674,6 +680,7 @@
 				F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
 				F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
 				F583EDF81632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
+				F5434CEB16DECA3E007766CE /* OMTextHyphenator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +701,7 @@
 				F583EDE91632ED6D007C2D87 /* OMCoreDataController.m in Sources */,
 				F583EDEB1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */,
 				F583EDF91632F08F007C2D87 /* NSDictionary+OMG.m in Sources */,
+				F5434CEC16DECA3E007766CE /* OMTextHyphenator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
