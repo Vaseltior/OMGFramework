@@ -8,6 +8,18 @@
 
 #import "OMAssertionHandler.h"
 
+///-----------------------------------------------------------------------------
+/// DDLog
+///-----------------------------------------------------------------------------
+
+#import <CocoaLumberjack/DDLog.h>
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_WARN;
+#endif
+
 @implementation OMAssertionHandler
 
 - (void)handleFailureInFunction:(NSString *)functionName file:(NSString *)fileName lineNumber:(NSInteger)line description:(NSString *)format, ...
