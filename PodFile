@@ -1,6 +1,7 @@
 platform :ios, '6.0'
 xcodeproj 'OMGFramework.xcodeproj'
 
+pod 'CocoaLumberjack', '~> 1.6'
 pod 'FDStatusBarNotifierView', '~> 0.1.0'
 
 target :'OMGFrameworkTests', :exclusive => true do
