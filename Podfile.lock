@@ -1,14 +1,17 @@
 
 PODS:
+- CocoaLumberjack (1.6)
 - FDStatusBarNotifierView (0.1.0)
-- Kiwi (2.0.5)
+- Kiwi (2.0.6)
 
 DEPENDENCIES:
+- CocoaLumberjack (~> 1.6)
 - FDStatusBarNotifierView (~> 0.1.0)
 - Kiwi
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 0f2fa7090a23f13261072d882e017c688300efbe
   FDStatusBarNotifierView: 46fc1eb663cb75fc65a77f359032d0624d943f7a
-  Kiwi: 89ade77eb49c889178cb2779e02514a7b9b9449e
+  Kiwi: 56082a80f942de4d10423d8d8a599ab30cf50228
 
 COCOAPODS: 0.16.2
