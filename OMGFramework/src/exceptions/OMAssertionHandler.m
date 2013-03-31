@@ -12,7 +12,7 @@
 /// DDLog
 ///-----------------------------------------------------------------------------
 
-#import "DDTTYLogger.h"
+#import <CocoaLumberjack/DDLog.h>
 
 #ifdef DEBUG
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;

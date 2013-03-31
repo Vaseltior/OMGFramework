@@ -13,7 +13,12 @@
 #import "OMAdditions.h"
 #import "OMObjectSingleton.h"
 
+
+// Exceptions
+#import "OMExceptionHeader.h"
+
 #import "OMCoreDataHeader.h"
 #import "OMApplication.h"
 #import "OMFixCategoryBugHeader.h"
 #import "OMUI.h"
+
