@@ -42,7 +42,7 @@
 - (void)addTag:(OMTagView *)tagView {
     NSParameterAssert(tagView);
     
-    tagView.tag = self.tagsCount++;
+    tagView.tag = ++self.tagsCount;
     
     // Start observing
     [tagView addObserver:self forKeyPath:@"selected" options:NSKeyValueObservingOptionNew context:nil];
@@ -72,7 +72,7 @@
         NSOrderedSame : (((UIView *)o1).tag > ((UIView *)o2).tag) ? NSOrderedDescending : NSOrderedAscending;
     }];
     
-    NSInteger i = 0;
+    NSInteger i = 1;
     for (UIView * v in sortedTagSubviews) {
         v.tag = i++;
     }
@@ -112,13 +112,45 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     NSInteger tagsCount = [self tagsCount];
+    
+    CGFloat hPadding = 6.0f;
+    CGFloat vPadding = 6.0f;
+    CGFloat lineSpace = CGRectGetWidth(self.bounds) - 2.0f * hPadding;
+    CGFloat remainingSpace = lineSpace;
+    CGFloat xOffset = hPadding;
+    CGFloat yOffset = vPadding;
+    
     for (NSInteger i=0; i<tagsCount; i++) {
         UIView * v = [self viewWithTag:i];
-        if (nil == v) {
+        if ((nil == v) || ![v isKindOfClass:[OMTagView class]]) {
             continue;
         }
+        OMTagView * tv = (OMTagView *)v;
+        CGSize tagSize = [tv sizeThatFits:self.bounds.size];
         
-        
+        // if new tag will fit on screen, in row:
+        //   - place it
+        if (tagSize.width <= remainingSpace) {
+            tv.frame = CGRectMake(xOffset, yOffset, tagSize.width, tagSize.height);
+            remainingSpace -= tagSize.width + hPadding;
+            xOffset += tagSize.width + hPadding;
+            
+        }
+        // else:
+        //   - put on next row at beginning
+        else {
+            
+            // Go to next line
+            yOffset += tagSize.height + vPadding;
+            
+            // Reset horizontal
+            xOffset = hPadding;
+            remainingSpace = lineSpace;
+            
+            tv.frame = CGRectMake(xOffset, yOffset, tagSize.width, tagSize.height);
+            remainingSpace -= tagSize.width + hPadding;
+            xOffset += tagSize.width + hPadding;
+        }
     }
 }
 
