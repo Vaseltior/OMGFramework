@@ -13,7 +13,6 @@
 #import "OMAdditions.h"
 #import "OMObjectSingleton.h"
 
-
 // Exceptions
 #import "OMExceptionHeader.h"
 

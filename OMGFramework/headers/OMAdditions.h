@@ -9,3 +9,4 @@
 
 #import "NSArray+OMG.h"
 #import "NSDictionary+OMG.h"
+#import "NSObject+OMKVOConvenience.h"

@@ -44,14 +44,14 @@
     NSString * _persistentStoreName;
 }
 
-@property (readonly, nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (readonly, nonatomic, retain) NSManagedObjectModel *managedObjectModel;
-@property (readonly, nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (readonly, nonatomic, strong) NSManagedObjectModel *managedObjectModel;
+@property (readonly, nonatomic, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-@property (nonatomic, retain) NSString * resourceFileName;
-@property (nonatomic, retain) NSString * resourceFileExtension;
-@property (nonatomic, retain) NSString * persistentStoreType;
-@property (nonatomic, retain) NSString * persistentStoreName;
+@property (nonatomic, strong) NSString * resourceFileName;
+@property (nonatomic, strong) NSString * resourceFileExtension;
+@property (nonatomic, strong) NSString * persistentStoreType;
+@property (nonatomic, strong) NSString * persistentStoreName;
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

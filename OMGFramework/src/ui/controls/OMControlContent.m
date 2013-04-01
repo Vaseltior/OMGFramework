@@ -12,7 +12,7 @@
 
 @interface OMControlContent()
 
-@property (nonatomic, retain) OMControl * control;
+@property (nonatomic, strong) OMControl * control;
 
 @end
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,19 +34,6 @@
 
     return self;
 } /* initWithControl */
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#pragma mark - Memory Management
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (void)dealloc {
-    OMReleaseSafely(_control);
-    OMReleaseSafely(_title);
-    [super dealloc];
-} /* dealloc */
 
 
 @end

@@ -42,7 +42,7 @@
     STAssertTrue([om1 compare:om2] == NSOrderedAscending, nil);
     STAssertTrue([om2 compare:om1] == NSOrderedDescending, nil);
     STAssertFalse([om1 compare:om2] == NSOrderedSame, nil);
-    OMReleaseSafely(om1); OMReleaseSafely(om2);
+    
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +54,7 @@
     STAssertTrue([om1 compare:om2] == NSOrderedAscending, nil);
     STAssertTrue([om2 compare:om1] == NSOrderedDescending, nil);
     STAssertFalse([om1 compare:om2] == NSOrderedSame, nil);
-    OMReleaseSafely(om1); OMReleaseSafely(om2);    
+    
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,7 +71,7 @@
     OMVersionNumber * om1 = nil;
     om1 = [[OMVersionNumber alloc] initWithString:@"1.0"];
     STAssertThrows([om1 compare:nil], nil);
-    OMReleaseSafely(om1);
+    
 }
 
 @end

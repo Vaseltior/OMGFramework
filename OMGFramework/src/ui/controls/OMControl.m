@@ -49,10 +49,6 @@
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (void)dealloc {
-    OMReleaseSafely(_controlContent);
-    [super dealloc];
-} /* dealloc */
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -220,7 +216,7 @@
     if ( !content ) {
         content = [[OMControlContent alloc] initWithControl:self];
         [[self controlContent] setObject:content forKey:key];
-        return [content autorelease];
+        return content;
     }
     
     return content;

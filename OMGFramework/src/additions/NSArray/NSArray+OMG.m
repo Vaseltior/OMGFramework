@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+OMG.h"
+#import "OMCore.h"
 
 @implementation NSArray (OMG)
 
@@ -35,10 +36,9 @@
     NSEnumerator* e = [copy objectEnumerator];
     for (id delegate; (delegate = [e nextObject]); ) {
         if ([delegate respondsToSelector:selector]) {
-            [delegate performSelector:selector withObject:p1];
+            SuppressPerformSelectorLeakWarning([delegate performSelector:selector withObject:p1];);
         }
     }
-    [copy release];
 }
 
 
@@ -48,10 +48,9 @@
     NSEnumerator* e = [copy objectEnumerator];
     for (id delegate; (delegate = [e nextObject]); ) {
         if ([delegate respondsToSelector:selector]) {
-            [delegate performSelector:selector withObject:p1 withObject:p2];
+            SuppressPerformSelectorLeakWarning([delegate performSelector:selector withObject:p1 withObject:p2];);
         }
     }
-    [copy release];
 }
 
 @end

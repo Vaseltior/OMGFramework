@@ -19,6 +19,7 @@
 
 #import "OMCoreDataController.h"
 #import "OMCoreHeader.h"
+#import <CoreData/CoreData.h>
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,34 +60,13 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _resourceFileName = [@"dicoreves" retain];
-        _resourceFileExtension = [@"momd" retain];
-        _persistentStoreType = [NSSQLiteStoreType retain];
-        _persistentStoreName = [@"dicoreves-2.0.sqlite" retain];
+        _resourceFileName = @"dicoreves";
+        _resourceFileExtension = @"momd";
+        _persistentStoreType = NSSQLiteStoreType;
+        _persistentStoreName = @"dicoreves-2.0.sqlite";
     }
     return self;
 }
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#pragma mark - Memory Management
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (void)dealloc {
-    OMReleaseSafely(_persistentStoreName);
-    OMReleaseSafely(_persistentStoreType);
-    OMReleaseSafely(_resourceFileName);
-    OMReleaseSafely(_resourceFileExtension);
-    
-    OMReleaseSafely(__managedObjectContext);
-    OMReleaseSafely(__managedObjectModel);
-    OMReleaseSafely(__persistentStoreCoordinator);
-    
-    [super dealloc];
-}
-
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #pragma mark - Core Data Operations
@@ -222,14 +202,11 @@
              for details.
              
              */
-            OMReleaseSafely(options);
             NSLog(@"============\nUnresolved error %@, %@\n============", error, [error userInfo]);
             [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
             return [self persistentStoreCoordinator];
             //abort();
         }    
-        
-        OMReleaseSafely(options);
         
         return __persistentStoreCoordinator;
     }

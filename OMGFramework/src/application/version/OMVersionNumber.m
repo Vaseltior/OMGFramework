@@ -10,7 +10,7 @@
 #import "OMCoreHeader.h"
 
 @interface OMVersionNumber ()
-@property (nonatomic, retain) NSString * version;
+@property (nonatomic, strong) NSString * version;
 @end
 
 @implementation OMVersionNumber
@@ -56,10 +56,6 @@
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (void)dealloc {
-    OMReleaseSafely(_version);
-    [super dealloc];
-}
 
 
 

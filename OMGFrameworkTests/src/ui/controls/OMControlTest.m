@@ -49,12 +49,6 @@
     
     [om setTitle:@"a title" forState:UIControlStateNormal];
     STAssertTrue([[om titleForState:UIControlStateNormal] isEqualToString:@"a title"], nil);
-    
-    /*STAssertTrue([om1 compare:om2] == NSOrderedAscending, nil);
-    STAssertTrue([om2 compare:om1] == NSOrderedDescending, nil);
-    STAssertFalse([om1 compare:om2] == NSOrderedSame, nil);
-    OMReleaseSafely(om1); OMReleaseSafely(om2);*/
-    OMReleaseSafely(om);
 }
 
 

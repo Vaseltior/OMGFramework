@@ -5,6 +5,7 @@
 //  Copyright (c) 2011 Samuel Grau. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
 #import "OMCoreDataGrandCentralController.h"
 #import "OMCoreDataController.h"
 #import "OMCoreHeader.h"
@@ -47,26 +48,6 @@ static OMCoreDataGrandCentralController * instance = nil;
     return nil;                                      
 }
 
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (id)retain {
-    return self;                                     
-}                                                  
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (NSUInteger)retainCount {
-    return NSUIntegerMax;                            
-}                                                  
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (oneway void)release {
-}                                                  
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (id)autorelease {
-    return self;                                     
-}                                                  
-
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - (id)copyWithZone:(NSZone *)zone {
     return self;                                     
@@ -91,13 +72,6 @@ static OMCoreDataGrandCentralController * instance = nil;
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- (void)dealloc {
-    // This object lives for the entire life of the application. Getting it to support being 
-    // deallocated would be quite tricky (particularly from a threading perspective), so we 
-    // don't even try.
-    
-    [super dealloc];
-}
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,8 +120,7 @@ static OMCoreDataGrandCentralController * instance = nil;
 - (void)createMutableDictionaryForKey:(id)key {
     NSMutableDictionary * d = [[NSMutableDictionary alloc] init];
     [_threadedManagedObjectContexts setObject:d forKey:key];
-    OMReleaseSafely(d);
-} /* createMutableDictionaryForKey */
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -165,7 +138,7 @@ static OMCoreDataGrandCentralController * instance = nil;
         
         return vv;
     }
-} /* usableImageForURL */
+}
 
 #pragma GCC diagnostic ignored "-Wselector"
 
@@ -234,7 +207,7 @@ static OMCoreDataGrandCentralController * instance = nil;
         //NSLog(@"============\nObserver created %@, %@\n============", moc, key);
     }    
     
-    return [moc autorelease];
+    return moc;
 }
 #pragma GCC diagnostic warning "-Wselector"
 
