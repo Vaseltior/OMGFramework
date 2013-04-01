@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OMTagListViewDelegate.h"
 
 /*!
  @brief This class will present tags as UIControl View
@@ -14,6 +15,8 @@
 @class OMTagView;
 
 @interface OMTagListView : UIView
+
+@property (nonatomic, assign) id<OMTagListViewDelegate> delegate;
 
 - (void)addTag:(OMTagView *)tagView;
 - (void)removeTagAtIndex:(NSInteger)index;

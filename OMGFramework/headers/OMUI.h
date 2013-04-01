@@ -9,5 +9,7 @@
 
 #import "OMControl.h"
 #import "OMControlContent.h"
+
+#import "OMTagListViewDelegate.h"
 #import "OMTagListView.h"
 #import "OMTagView.h"

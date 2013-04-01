@@ -22,6 +22,7 @@
 @implementation OMTagListView
 
 @synthesize tagsCount = _tagsCount;
+@synthesize delegate = _delegate;
 
 ///-----------------------------------------------------------------------------
 #pragma mark -
@@ -104,6 +105,12 @@
                 BOOL oldValue = [(NSNumber*)[change objectForKey:NSKeyValueChangeOldKey] boolValue];
                 if (newValue && (newValue != oldValue)) {
                     UIView * v = (UIView *)object;
+                    id<OMTagListViewDelegate> cDelegate = [self delegate];
+                    if (nil != cDelegate) {
+                        if ([cDelegate respondsToSelector:@selector(tagTouchedAtIndex:)]) {
+                            [cDelegate tagTouchedAtIndex:v.tag-1];
+                        }
+                    }
                     NSLog(@"View with tag %i touched", [v tag]);
                 }
             }

@@ -18,6 +18,7 @@
 		F56BC0FE1709C5950071CD95 /* NSException+OMConvenience.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58AAADF17087E75008EBB43 /* NSException+OMConvenience.h */; };
 		F56BC0FF1709C5950071CD95 /* OMAssertionHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F58AAADB1708775D008EBB43 /* OMAssertionHandler.h */; };
 		F56BC1001709C5950071CD95 /* OMTextHyphenator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F5434CE916DECA3E007766CE /* OMTextHyphenator.h */; };
+		F56BC1021709E7270071CD95 /* OMTagListViewDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F56BC1011709E6240071CD95 /* OMTagListViewDelegate.h */; };
 		F583EDE81632ED6D007C2D87 /* OMCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F583EDEA1632ED6D007C2D87 /* OMCoreDataGrandCentralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F583EDE61632ED6D007C2D87 /* OMCoreDataGrandCentralController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F583EDF01632EF26007C2D87 /* OMCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F583EDEF1632EEB4007C2D87 /* OMCore.h */; };
@@ -75,6 +76,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				F56BC1021709E7270071CD95 /* OMTagListViewDelegate.h in CopyFiles */,
 				F56BC0FC1709C5950071CD95 /* NSObject+OMKVOConvenience.h in CopyFiles */,
 				F56BC0FD1709C5950071CD95 /* OMExceptionHeader.h in CopyFiles */,
 				F56BC0FE1709C5950071CD95 /* NSException+OMConvenience.h in CopyFiles */,
@@ -112,6 +114,7 @@
 		F56BC0F51709C3E50071CD95 /* NSObject+OMKVOConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OMKVOConvenience.h"; sourceTree = "<group>"; };
 		F56BC0F61709C3E50071CD95 /* NSObject+OMKVOConvenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+OMKVOConvenience.m"; sourceTree = "<group>"; };
 		F56BC0F91709C4C30071CD95 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F56BC1011709E6240071CD95 /* OMTagListViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMTagListViewDelegate.h; sourceTree = "<group>"; };
 		F583EDE31632ED6D007C2D87 /* OMCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataController.h; sourceTree = "<group>"; };
 		F583EDE41632ED6D007C2D87 /* OMCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMCoreDataController.m; sourceTree = "<group>"; };
 		F583EDE51632ED6D007C2D87 /* OMCoreDataGrandCentralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMCoreDataGrandCentralController.h; sourceTree = "<group>"; };
@@ -457,6 +460,7 @@
 				F5ABD41B162AF806003E576F /* OMTagListView.m */,
 				F5ABD41C162AF806003E576F /* OMTagView.h */,
 				F5ABD41D162AF806003E576F /* OMTagView.m */,
+				F56BC1011709E6240071CD95 /* OMTagListViewDelegate.h */,
 			);
 			path = tags;
 			sourceTree = "<group>";
