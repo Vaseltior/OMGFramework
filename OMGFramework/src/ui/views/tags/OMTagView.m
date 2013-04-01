@@ -64,6 +64,10 @@
 - (void)dealloc {
     [self omUnregisterKeyPathsFromKVO];
     
+#if ! __has_feature(objc_arc)
+#error "ARC is off"
+#endif
+    
     // [super dealloc]; << provided by the compiler
 }
 
