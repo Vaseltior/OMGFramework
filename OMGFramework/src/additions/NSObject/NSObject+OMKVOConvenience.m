@@ -12,7 +12,10 @@
 
 - (void)omRegisterKeyPathsForKVO {
 	for (NSString *keyPath in [self omObservableKeyPaths]) {
-		[self addObserver:self forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:NULL];
+		[self addObserver:self
+               forKeyPath:keyPath
+                  options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionPrior)
+                  context:NULL];
 	}
 }
 

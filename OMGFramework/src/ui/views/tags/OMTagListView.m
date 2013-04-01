@@ -45,8 +45,8 @@
     tagView.tag = ++self.tagsCount;
     
     // Start observing
-    [tagView addObserver:self forKeyPath:@"selected" options:NSKeyValueObservingOptionNew context:nil];
-    [tagView addObserver:self forKeyPath:@"highlighted" options:NSKeyValueObservingOptionNew context:nil];
+    [tagView addObserver:self forKeyPath:@"selected" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionPrior context:nil];
+    [tagView addObserver:self forKeyPath:@"highlighted" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionPrior context:nil];
     
     [self addSubview:tagView];
 }
@@ -98,9 +98,15 @@
         if ([keyPath isEqualToString:@"selected"]) {
             
         } else if ([keyPath isEqualToString:@"highlighted"]) {
-            
-            UIView * v = (UIView *)object;
-            NSLog(@"View with tag %i touched", [v tag]);
+            NSNumber * isPriorNumber = (NSNumber *)[change objectForKey:NSKeyValueChangeNotificationIsPriorKey];
+            if (nil == isPriorNumber) {
+                BOOL newValue = [(NSNumber*)[change objectForKey:NSKeyValueChangeNewKey] boolValue];
+                BOOL oldValue = [(NSNumber*)[change objectForKey:NSKeyValueChangeOldKey] boolValue];
+                if (newValue && (newValue != oldValue)) {
+                    UIView * v = (UIView *)object;
+                    NSLog(@"View with tag %i touched", [v tag]);
+                }
+            }
         }
         
     } else {
@@ -120,7 +126,7 @@
     CGFloat xOffset = hPadding;
     CGFloat yOffset = vPadding;
     
-    for (NSInteger i=0; i<tagsCount; i++) {
+    for (NSInteger i=1; i<=tagsCount; i++) {
         UIView * v = [self viewWithTag:i];
         if ((nil == v) || ![v isKindOfClass:[OMTagView class]]) {
             continue;

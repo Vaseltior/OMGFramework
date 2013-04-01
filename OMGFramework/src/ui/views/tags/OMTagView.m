@@ -209,9 +209,11 @@
     NSString *text = [self text];
     UIFont *font = [self font];
     
+    CGFloat vPadding = 3.0f;
+    
     CGSize bSize = [OMTagView sizeOfButtonWithString:text font:font];
     
-    return CGSizeMake(bSize.height + bSize.width, bSize.height);
+    return CGSizeMake(bSize.height + bSize.width, bSize.height + 2.0f*vPadding);
 }
 
 @end
