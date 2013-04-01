@@ -15,6 +15,7 @@
 
 @implementation OMVersionNumber
 
+@synthesize version = _version;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #pragma mark -
 #pragma mark Initialization
