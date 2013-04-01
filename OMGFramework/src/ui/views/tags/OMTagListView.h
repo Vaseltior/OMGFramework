@@ -11,8 +11,11 @@
 /*!
  @brief This class will present tags as UIControl View
  */
+@class OMTagView;
+
 @interface OMTagListView : UIView
 
-- (void)setTags:(NSArray *)array;
+- (void)addTag:(OMTagView *)tagView;
+- (void)removeTagAtIndex:(NSInteger)index;
 
 @end
